@@ -1,33 +1,55 @@
-.App {
+.App{
+  min-height: 100vh;
+  background-color: whitesmoke;
+  
+}
+
+.bar {
+
+  background-color: rgba(202, 202, 202,0.7);;
+  width: 100;
+  height: 8px;
+}
+
+.contentShow {
+  
+  margin-left: 10%;
+}
+
+.cardContent {
+  
+  display: inline-block;
+  
+}
+.cardContent h1,h3 {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.pageNav {
+  margin-top: 1%;
+  margin-left: 40%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pageNav .spacebtn {
+  margin-right: 20%;
 }
-
-.App-link {
-  color: #61dafb;
+.pageNav button {
+  text-align: center;
+  margin-left: 1%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid grey;
+  color: grey;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pageNav button:focus {
+  outline-style: none;
+}
+.pageNav button:hover {
+  color: red ;
+  border-bottom: 1px solid red;
+}
+select {
+  border: none;
+}
+select:focus {
+  border: none;
+  outline-style: none;
 }
